@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1%;
+    margin-top: 5%;
+    color: white;
+    justify-content: center;
+}
+.card{
+    background-color: #ccc;
+    color: black;
+    border: 1px black solid;
+    margin-top: 1%;
+    border-radius: 5px;
+    text-align: center;
+}
+.cards img {
+    width: 150px;
+    border-radius: 50%;
+    padding-top: 5%;
+}
+.card h3{
+    padding-top: 5%;
+}
+.card h5 {
+    padding-top: 5%;
+}
+.cards{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 2s;
+}
+.cards img:hover{
+    border-radius: 5%;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transform: rotateY(180deg);
+}
+.card:hover{
+    background-image: url(https://wallpaperaccess.com/full/1268172.jpg);
+    border-color: white;
+    color: white;
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    h3, h5 {
+        font-size: 80%;
+    }
+} 
+@media only screen and (max-width: 320px) {
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+} 
+

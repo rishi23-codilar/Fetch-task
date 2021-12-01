@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.Pagination {
+    margin: 5%;
+    padding: 30px;
+    text-align: center;
+}
+.Pagination a{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+.Pagination a:hover{
+    background-color: aquamarine;
+}
